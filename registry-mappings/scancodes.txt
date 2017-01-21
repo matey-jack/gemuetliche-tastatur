@@ -1,0 +1,17 @@
+; VK  SC
+; DB  00C	ß              	
+; DD  00D	´  
+
+; BB  01B   +              	
+; BF  02B	#   
+           	
+; BD  035	-              	
+; BE  034	.              	
+; BC  033	,              	
+; E2  056	<              	
+; >
+
+VK_DECIMAL would refer to the DEL key on the numpad.
+This will work in tandom with the NUM LOCK.
+If you need to trap the "." key of the normal keyboard, then you will need to use the corresponding hex value which is 0x2E.
+VK_DECIMAL	0x6E (dec 110)

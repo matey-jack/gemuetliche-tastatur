@@ -1,0 +1,43 @@
+Anwender-Version: http://www.howtogeek.com/howto/windows-vista/disable-caps-lock-key-in-windows-vista/
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout
+
+00000000 00000000 03000000 2A003A00 3A004600 00000000
+constant constant #maps+1  to  from to  from constant
+
+Nerd-Version:
+https://msdn.microsoft.com/windows/hardware/drivers/hid/keyboard-and-mouse-class-drivers
+Ctrl+F for "Scan code mapper for keyboards"
+
+
+caps lock 003a
+left shift 002a
+
+Leider zeigt KeyTweak den Code erst an, wenn es ihn schon in die Registry geschrieben hat!
+nur bei den einfachen Tasten sind die Nummern auf der angezeigten Tastatur gleich denen in der Registry.
+Andere Tasten haben immer diesen extended Code 0xE0 dazu.
+
+AltGr 1d,02  (dezimal 541)  -- scheint im Mapping nicht zu funktionieren -- genau wie hier beschrieben:
+http://stackoverflow.com/questions/229633/how-to-globally-map-altgr-key-to-alt-key#comment45956289_460800
+
+RICHTIG
+rechts-Alt 38,e0 
+PrintSrc 37,e0
+dann mappe ich doch diese Codes mal um...
+
+linkes DRITT, 0x56 also 56,00 (dec 86)
+Dummerweise versucht KeyTweak stattdessen linke Strg umzubiegen.
+Gut, dass ich es in der Registry selbst ändern kann.
+
+
+sharpkeys und keytweak verändern beide die Registry, nur letzterer kann auch AltGr mappen und vorher anzeigen, 
+was er schreiben wird
+
+other tools:
+Keyboard Layout Manager http://www.klm32.com/index.html
+
+http://www.kbdedit.com/
+
+
+angeblich kann dieses Tool auch Extended Keys ohne Neustart ändern!! http://www.pcmag.com/article2/0,2817,764194,00.asp
+--> allerdings nur unter alten Versionen von Windows. Ab Windows 2000 verwendet es auch die ScanCode Map!
