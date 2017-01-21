@@ -1,0 +1,35 @@
+Wird right-alt per Scancode auf E gemappt, dann kann man das originale E nicht per AHK auf B mappen ohne alle Es dabei wegzumappen!!
+
+Löungsmöglichkeiten:
+A
+vielleicht kann AHK doch right-alt mappen - dann brauchen wir die Registry nur für CapsLock und Druck-->AltGr, was auch sehr erleichternd für die Mitbenutzer wäre.
+
+B
+Mappe right-alt auf eine seltene Taste, die AHK dann auf E mappen kann und die am besten gar nicht auf dem Laptop vorkommt.
+
+Teste A zuerst!
+
+Funktioniert prima, aber dann sind natürlich beide AltGr-Tasten wieder umbelegt! Dann müsste ich also PrtScr auf eine temporäre Taste legen oder alle AltGr-Kombinationen per AHK wieder neu definieren.
+
+Sicherheitshalber lege ich mir hier die Zeichen schonmal ab:
+|µ~€@²³{[]}\
+
+Nennen wir das mal A2 und testen es nach dem nächsten Reboot.
+
+Erstaunlicherweise hat es prima funktioniniert. PrintScr als AltGr kann das @ und auch die ~ prima erzeugen. Jetzt fehlt mir nur noch das linke DRITT Symbol und die Belegung der dritten Ebene und natürlich die Verschiebung der rechten Hand -- was ich übrigens gerade daran merke, dass ich das rechte Shift nicht so gut treffe und natürlich den - nicht an der alten Stelle finde.
+
+CAPS als Shift funktioniniert auch als AHK, aber es wird dabei ständig der Caps-Status auf dem Bildschirm eingeblendet. Also gehe ich doch wieder zum Registry-Mapping für diese Taste über und kann dann sicher Shift+Shift als CapsLock irgendwie per AHK einstellen.
+
+https://autohotkey.com/docs/misc/Remap.htm
+
+
+Neue Belegungen für die dritte Ebene kann ich bisher noch nicht hinzufügen.
+Sobald ich eine Zeile wie 
+PrintScreen & ü::Send {~}
+einfüge verliert PrintScr seine sonstige Bedeutung als AltGr-Taste!
+Ralt & ü ; invalid
+Ralt & SCxxx ; invalid
+AltGr & irgendwas ; invalid....
+
+
+TODO: insbesondere-Problem lösen. Vielleicht indem ich gleich auf die Layout-Methode 
