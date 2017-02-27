@@ -1,6 +1,8 @@
-guter technischer Tipp: http://www.fullybaked.co.uk/articles/changing-my-keyboard-layout
-http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele
-https://github.com/fullybaked/Minimak-for-Mac
+guter technischer Tipp: 
+http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele --> Tool zum Erstellen der MacOS xml layout files (ähnlich zum MSKLC, aber braucht keine Binaries)
+
+https://github.com/tekezo/Karabiner-Elements/blob/master/usage/README.md --> kann auch andere Tasten (Ctrl, Backspace, usw.) mappen
+
 
 Reihenfolge:
 1. Caps zu Shift machen, weil das sogar im Adler-Modus nützlich ist und mit wohldefinierter Methode aus dem Internet erreicht werden kann. (Bishin zu Tests mit freiwilligen Kollegen...)
