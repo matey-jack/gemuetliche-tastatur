@@ -3,6 +3,7 @@ http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ukelele --> Tool zum
 
 https://github.com/tekezo/Karabiner-Elements/blob/master/usage/README.md --> kann auch andere Tasten (Ctrl, Backspace, usw.) mappen
 
+BetterTouchTool --> https://www.boastr.net/ --> mit Gesten, aber auch Key-Mappings
 
 Reihenfolge:
 1. Caps zu Shift machen, weil das sogar im Adler-Modus nützlich ist und mit wohldefinierter Methode aus dem Internet erreicht werden kann. (Bishin zu Tests mit freiwilligen Kollegen...)
