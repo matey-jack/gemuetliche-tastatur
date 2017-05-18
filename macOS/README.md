@@ -8,7 +8,7 @@ man auf die einzelnen Tasten kleben kann.
 
 Wegen dem Daumen-e braucht man für dieses Layout nicht nur eine ".keylayout" Datei, 
 sondern auch das Programm "Karabiner Elements" (vereinfachte Version des auf neuem MacOS 
-nicht mehr verfügbaren "KeyRemap4MacBook" aka "Karabiner".)
+nicht mehr verfügbaren "KeyRemap4MacBook" aka "Karabiner").
 
 Karabiner Elements ist kostenlos (und sogar open-source) und kann hier geladen werden: 
 https://pqrs.org/latest/karabiner-elements-latest.dmg
