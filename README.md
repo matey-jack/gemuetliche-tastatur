@@ -1,26 +1,31 @@
 
-Dies ist die Windows-Implementierung vom gemütlichen Tastaturlayout, dessen Linux-Version unter https://github.com/matey-jack/keyboard-layer3 zu finden ist. Bisher ist dort auch noch die Anwender-Doku zur Tastenbelegung.
+Dies ist die Windows- und Mac-Implementierung vom gemütlichen Tastaturlayout!
+- Layoutbeschreibung und Linux-Implementierung dazu unter https://github.com/matey-jack/keyboard-layer3
+- [Doku zur MacOs Version](macOS/README.md)
 
-Hier der Umsetzungsplan bisher:
+Im folgenden die Doku zur Windows-Version!
 
-Registry-Mapping:
- - Caps to Shift
- - AltGr auf temporäre Position der Akzenttaste, damit sie im KLC zum E gemacht werden kann.
- - PrintScreen to AltGr
- - <> auch als AltGr
-
---> das gilt global für alle Nutzer und bisher hat sich mein Kind noch nicht beschwert, dass an der Tastatur etwas komisch sein :-))
+Das ganze Layout besteht aus zwei Teilen, da sich Tasten wie Caps und AltGr nur über die Registry ändern lassen, nicht über das Layout. Als Anwender muss man also:
+ 1. eine Datei in die Registry spielen 
+ 2. das eigentliche Keyboard-Layout installieren
  
- 
-MS Keylayout Creator:
- - Alle Buchstaben nach NIT-Breit
- - Alle Zeichen auf der dritten Ebene, wie meine geliebten () und natürlich die ohnehin schon auf der dritten Ebene liegen.
- 
---> funktioniert gut und kann ohne Neustart geändert werden.
-Aber muss leider in jedem Fenster neu über die Layout-Auswahl in der Taskleiste ausgewählt werden.
+## Der Registry-Teil
+ - Die Registry-Änderung ist sehr klein und man kann sie sich selbst genau anschauen, um zu sehen, dass hier nichts bösartiges geschieht. [Hier gibt es eine kurze Erklärung dazu.](registry-mappings/registry mapping codes.txt)
+ - Im Gegensatz zu Lösungen wie AutoHotKey funktioniert das Registry-Mapping sehr stabil, konsistent und ohne irgendwelchen 
+ - [Meine Version dieser Datei](registry-mappings/linke DRITT Taste mit E für KLC - aktuelle Version.reg) ist für ThinkPad-Laptops optimiert, welche PrintScr direkt neben der AltGr-Taste haben. Für andere Laptops muss die Datei entsprechend Anleitung angepasst werden.
+ - Die Registry-Änderung gilt für alle Nutzer des Computers und lässt sich nicht wie das Layout einfach zur Laufzeit umstellen. Falls man die Zeichen > und < auch im normalen Layout braucht, empfiehlt es sich den Layer 3 auch dort einzurichten, so dass man mit AltGr < und > schreiben kann.
+ - Mit Tools wie [KeyTweak](http://www.chip.de/downloads/KeyTweak_33814993.html) kann man sich das RegistryMapping auch erstellen lassen. Manche Tasten beherrscht KeyTweak nicht so gut, so dass man zusätzlich noch [SharpKeys](http://www.chip.de/downloads/SharpKeys_63365483.html) ausprobieren kann. Profi-Tipp: beide Tools schreiben direkt in die Registry, aber das Mapping wird erst nach einem Neustart aktiv. Also kann man sich das Mapping auch aus der Registry herauskopieren, manuell nachjustieren und erst, wenn man ganz sicher ist durch Neustart es aktivieren.
+ - Schließlich bitte nicht wundern, dass wir AltGr nicht direkt auf "e" mappen können. Dieses Mapping ist nämlich so tief unter der Haube von Windows, dass sich das neue "e" nicht von der alten Querty-E Taste unterscheiden lässt. Da wir letztere aber zu "b" mappen wollen, muss das neue "e" zunächst auf eine Dummy-Taste ausweichen. Auf dem Mac habe ich es geschafft, als Dummy eine NumPad-Taste zu benutzen, die es auf der physischen Tastatur gar nicht gibt, so dass keine echte Taste dafür verschwendet wird. Mit dem ThinkPad habe ich das leider noch nicht geschafft und verschwende somit die Akzent-Taste mit ´ und `. Akzente sind dann im Keyboard-Layout-File auf einer anderen Taste in der AltGr-Ebene definiert.
 
+Wer auf die CapsLock- und AltGr-Änderung verzichten möchte, kann das Registry-Mapping auch weglassen und nur das Layout entsprechend anpassen. Für sind beide Änderungen aber extrem hilfreich und allein CapsLock als Shift zu verwenden ist schon eine **große** Erleichterung für den _kleinen_ Finger. (Wortspiel, haha!)
 
-AHK:
+## Das eigentliche Keyboard-Layout:
+ - Dies wurde mit dem [Microsoft Keyboard-Layout-Creator (KLC)](https://msdn.microsoft.com/en-us/globalization/keyboardlayouts.aspx) erstellt und kann damit auch recht komfortabel geändert werden.
+ - Hier ist [meine empfohlene Version](KLC/leicht-breit.klc) mit dem "breiten" Ergo-Layout, dass die rechte Hand näher an Enter-, Backspace- und Shift-Tasten bringt. Verwende ich so schon seit drei Jahren und will es nicht missen!
+ - Man kann mit dem KLC ein Layout auch direkt installiren und dann ganz normal über die Layout-Auswahl in der Taskleiste aktivieren.
+ - Leider muss das scheinbar immer für jedes Programm einzeln aktiviert werden. Ich drücke also immer erstmal Alt+Shift, wenn ich ein neues Programm starte. Falls jemand herausfindet, wie man das automatisch bzw. global hinkriegt, schreib er/sie mir bitte!
+
+Was bisher noch fehlt und ggf mit AutoHotKey (AHK) realisiert werden könnte:
  - Shift+Backspace und/oder Dritt+Backspace
  - Pfeiltasten auf Dritter Ebene  -->  aber genau mit der dritten Ebene hatte AHK ja schon Probleme...
  - Ersatz für Capslock
