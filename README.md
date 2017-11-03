@@ -10,7 +10,7 @@ Das ganze Layout besteht aus zwei Teilen, da sich Tasten wie Caps und AltGr nur 
  2. das eigentliche Keyboard-Layout installieren
  
 ## Der Registry-Teil
- - Die Registry-Änderung ist sehr klein und man kann sie sich selbst genau anschauen, um zu sehen, dass hier nichts bösartiges geschieht. [Hier gibt es eine kurze Erklärung dazu.](registry-mappings/registry mapping codes.txt)
+ - Die Registry-Änderung ist sehr klein und man kann sie sich selbst genau anschauen, um zu sehen, dass hier nichts bösartiges geschieht. [Hier gibt es eine kurze Erklärung dazu.](registry-mappings/registry_mapping_codes.txt)
  - Im Gegensatz zu Lösungen wie AutoHotKey funktioniert das Registry-Mapping sehr stabil, konsistent und ohne irgendwelchen 
  - [Meine Version dieser Datei](registry-mappings/aktuelle_Version_mit_Daumen_E.reg) ist für ThinkPad-Laptops optimiert, welche PrintScr direkt neben der AltGr-Taste haben. Für andere Laptops muss die Datei entsprechend Anleitung angepasst werden.
  - Die Registry-Änderung gilt für alle Nutzer des Computers und lässt sich nicht wie das Layout einfach zur Laufzeit umstellen. Falls man die Zeichen > und < auch im normalen Layout braucht, empfiehlt es sich den Layer 3 auch dort einzurichten, so dass man mit AltGr < und > schreiben kann.
