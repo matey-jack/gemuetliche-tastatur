@@ -27,10 +27,10 @@ dann mappe ich doch diese Codes mal um...
 
 linkes DRITT, 0x56 also 56,00 (dec 86)
 Dummerweise versucht KeyTweak stattdessen linke Strg umzubiegen.
-Gut, dass ich es in der Registry selbst ändern kann.
+Gut, dass ich es in der Registry selbst Ã¤ndern kann.
 
 
-sharpkeys und keytweak verändern beide die Registry, nur letzterer kann auch AltGr mappen und vorher anzeigen, 
+sharpkeys und keytweak verÃ¤ndern beide die Registry, nur letzterer kann auch AltGr mappen und vorher anzeigen, 
 was er schreiben wird
 
 other tools:
@@ -39,5 +39,5 @@ Keyboard Layout Manager http://www.klm32.com/index.html
 http://www.kbdedit.com/
 
 
-angeblich kann dieses Tool auch Extended Keys ohne Neustart ändern!! http://www.pcmag.com/article2/0,2817,764194,00.asp
+angeblich kann dieses Tool auch Extended Keys ohne Neustart Ã¤ndern!! http://www.pcmag.com/article2/0,2817,764194,00.asp
 --> allerdings nur unter alten Versionen von Windows. Ab Windows 2000 verwendet es auch die ScanCode Map!
