@@ -18,6 +18,8 @@ since the original source requires some build machinery, we start prototyping on
 expert knowlege
 ===============
 
+some sane docs: https://wiki.archlinux.org/index.php/X_KeyBoard_extension
+
 Layout name shown in GNOME Settings comes from evdev.xml, so assume that only evdev related files are relevant for us!
 
 
