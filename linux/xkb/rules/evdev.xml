@@ -3433,6 +3433,12 @@
         </variant>
         <variant>
           <configItem>
+            <name>leicht</name>
+            <description>German (leichter tippen, evdev.xml)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>mac</name>
             <description>German (Macintosh)</description>
           </configItem>

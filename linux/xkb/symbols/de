@@ -288,6 +288,26 @@ xkb_symbols "sundeadkeys" {
 };
 
 
+partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "leicht" {
+    include "de(basic)"
+
+    name[Group1]= "German (leichter tippen, symbols/de)";
+
+    include "shift(both_capslock)"
+
+    // TODO: merge this into file ./shift
+    // TODO: decide for Shift_Lock vs Caps_Lock
+    key <CAPS> {
+        symbols[Group1]= [         Shift_L,      Caps_Lock ]
+    };
+
+    key <AC07>  { [         n,          N,        dead_belowdot, dead_abovedot   ] };
+
+    key <AB06>	{ [         j,          J, rightdoublequotemark, rightsinglequotemark ]	};
+
+};
+
 // German Neo-Layout Version 2
 // adopted 2004 by Hanno Behrens <Hanno.Behrens@gmx.de>
 // inspired by Dvorak/de-ergo  http://www.goebel-consult.de/de-ergo/
