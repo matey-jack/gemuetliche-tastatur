@@ -294,7 +294,9 @@ xkb_symbols "leicht" {
 
     name[Group1]= "German (leichter tippen, symbols/de)";
 
-    // first come all the modifiers...
+    // --------------------------------------------------------------
+    //           first come all the modifiers...
+    // --------------------------------------------------------------
     include "shift(both_capslock)"
 
     // TODO: merge this into file ./shift
@@ -320,6 +322,11 @@ xkb_symbols "leicht" {
         type = "FOUR_LEVEL",
         symbols[Group1]= [               e, E, eacute,          Eacute ]
     };
+
+
+    // --------------------------------------------------------------
+    //               and now all the easy stuff
+    // --------------------------------------------------------------
 
     // add Euro sign € on Level 3 of dollar $, since it is replaced with Layer 3 navigation
     key <AE04> { [               4,          dollar,        EuroSign,        currency ] };
