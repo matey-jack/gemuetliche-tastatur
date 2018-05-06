@@ -294,6 +294,7 @@ xkb_symbols "leicht" {
 
     name[Group1]= "German (leichter tippen, symbols/de)";
 
+    include "level3(lsgt_switch)"
     include "shift(both_capslock)"
 
     // TODO: merge this into file ./shift
