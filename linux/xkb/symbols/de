@@ -302,7 +302,7 @@ xkb_symbols "leicht" {
     // TODO: merge this into file ./shift
     // TODO: decide for Shift_Lock vs Caps_Lock
     key <CAPS> {
-        symbols[Group1]= [         Shift_L,      Caps_Lock ]
+        symbols[Group1] = [         Shift_L,      Caps_Lock ]
     };
 
     include "level3(lsgt_switch)"
@@ -311,9 +311,13 @@ xkb_symbols "leicht" {
     // in particular, RALT still seems to be a modifier key, so I must be careful not to type it with another key...
     key <PRSC> {
         type = "PC_LALT_LEVEL2",
-        symbols[Group1]= [           ISO_Level3_Shift,         ISO_Level3_Shift ]
+        symbols[Group1] = [           ISO_Level3_Shift,         ISO_Level3_Shift ]
     };
-    modifier_map Mod5 { <PRSC> };
+    replace key <RWIN> {
+        type = "PC_LALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ] 
+    };
+    modifier_map Mod5 { <PRSC>, <RWIN> };
 
 
     // now our most difficult key :-)
