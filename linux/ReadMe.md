@@ -27,11 +27,12 @@ Layout name shown in GNOME Settings comes from evdev.xml, so assume that only ev
 three keys have special names although they are part of normal grid on German/European Keyboards
 
 here's a picture starting with number row: 
-TLDE AE01 .. AE12
-TAB AD01 .. AD12
-CAPS AC01 .. AC11 BKSL
-SHIFT LSGT AD01 .. AD10 SHIFT
 
-TLDE - 
-BKSL - on American Layouts can be right of AD12 instead 
-LSGT - this is the extra key that American Keyboards don't have
+    TLDE AE01 .. AE12
+    TAB AD01 .. AD12
+    CAPS AC01 .. AC11 BKSL
+    SHIFT LSGT AD01 .. AD10 SHIFT
+
+    TLDE - doesn't carry what the name promises (tilde), but all modern keyboards seem to have it in that position
+    BKSL - on American Layouts can be right of AD12 instead 
+    LSGT - this is the extra key that American Keyboards don't have
