@@ -23,7 +23,8 @@ Wer auf die CapsLock- und AltGr-Änderung verzichten möchte, kann das Registry-
  - Dies wurde mit dem [Microsoft Keyboard-Layout-Creator (KLC)](https://msdn.microsoft.com/en-us/globalization/keyboardlayouts.aspx) erstellt und kann damit auch recht komfortabel geändert werden.
  - Hier ist [meine empfohlene Version](KLC/leicht-breit.klc) mit dem "breiten" Ergo-Layout, dass die rechte Hand näher an Enter-, Backspace- und Shift-Tasten bringt. Verwende ich so schon seit drei Jahren und will es nicht missen!
  - Man kann mit dem KLC ein Layout auch direkt installieren und dann ganz normal über die Layout-Auswahl in der Taskleiste aktivieren.
- - Leider muss das scheinbar immer für jedes Programm einzeln aktiviert werden. Ich drücke also immer erstmal Alt+Shift, wenn ich ein neues Programm starte. Falls jemand herausfindet, wie man das automatisch bzw. global hinkriegt, schreib er/sie mir bitte!
+ - Damit man das Layout nicht ständig für jedes Programm aktivieren muss, ganz wichtig: in der Systemsteuerung die Reihenfolge ändern, so dass es ganz oben steht.
+ - Damit auch Strg-F auf dem richtigen F liegt und Strg-O auf dem richtigen O, müssen wir, wie [hier beschrieben]( https://www.zybuluo.com/torresdyl/note/774240), die VK-Spalten in der KLC-Datei auch ändern. (Weiß nicht, ob der graphische Editor das macht...)
 
 Was bisher noch fehlt und ggf mit AutoHotKey (AHK) realisiert werden könnte:
  - Shift+Backspace und/oder Dritt+Backspace
