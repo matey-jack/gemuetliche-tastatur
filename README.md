@@ -1,6 +1,9 @@
 
-Dies ist die Windows- und Mac-Implementierung vom gemütlichen Tastaturlayout!
-- Layoutbeschreibung und Linux-Implementierung dazu unter https://github.com/matey-jack/keyboard-layer3
+Das Gemütliche Tastaturlayout!
+
+- Layoutbeschreibung muss noch aus dem alten Repo migriert werden: https://github.com/matey-jack/keyboard-layer3
+- [Doku zur Linux Version](linux/ReadMe.md) --> diese funktioniert insbesondere auch bei neueren Linux-Systemen mit Wayland (z.B. Ubuntu ab Version 17.10 bzw. 18.04)
+- [Linux xkb Version](https://github.com/matey-jack/keyboard-layer3) --> funktioniert auch ohne Root-Rechte, aber nicht mehr mit Wayland. Ich werde diese Version auch nicht mehr pflegen. Ist vielleicht leichter zum Ausprobieren, aber langfristig bitte diese hier verwenden.
 - [Doku zur MacOs Version](macOS/README.md)
 
 Im folgenden die Doku zur Windows-Version!
