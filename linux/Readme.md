@@ -4,6 +4,21 @@ Leider ist die Installation noch etwas krude:
 
 Danach ist das neue Layout als Variante des Deutschen verfügbar und lässt sich über die Tastatureinstellungen auswählen. Bei Ubuntu zum Beispiel geht es über Einstellungen  -> Region und Sprache.
 
+Test, ob das Kopieren geklappt hat:
+
+    grep leicht -r /usr/share/X11/xkb/
+    
+Es sollten dann ungefähr so aussehen:
+
+/usr/share/X11/xkb/xkb/rules/evdev.lst:  leicht          de: German (leichter tippen, evdev.lst)
+/usr/share/X11/xkb/xkb/rules/base.lst:  leicht          de: German (leichter tippen, base.lst)
+/usr/share/X11/xkb/xkb/rules/evdev.xml:            <name>leicht</name>
+/usr/share/X11/xkb/xkb/rules/evdev.xml:            <description>German (leichter tippen, evdev.xml)</description>
+/usr/share/X11/xkb/xkb/rules/base.xml:            <name>leicht</name>
+/usr/share/X11/xkb/xkb/rules/base.xml:            <description>German (leichter tippen, base.xml)</description>
+/usr/share/X11/xkb/xkb/symbols/de:xkb_symbols "leicht" {
+/usr/share/X11/xkb/xkb/symbols/de:    name[Group1]= "German (leichter tippen, symbols/de)";
+
 
 expert knowlege
 ===============
