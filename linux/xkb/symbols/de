@@ -306,18 +306,24 @@ xkb_symbols "leicht" {
     };
 
     include "level3(lsgt_switch)"
+    // depending on your physical keyboard layout, there is one of the following three different keys in the position
+    // to the right of the thumb-e.
     // TODO: this should move to its own option/partial in ./level3
     // and it would be nice to understand better what it does!
     // in particular, RALT still seems to be a modifier key, so I must be careful not to type it with another key...
     key <PRSC> {
         type = "PC_LALT_LEVEL2",
-        symbols[Group1] = [           ISO_Level3_Shift,         ISO_Level3_Shift ]
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ]
     };
     replace key <RWIN> {
         type = "PC_LALT_LEVEL2",
         symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ] 
     };
-    modifier_map Mod5 { <PRSC>, <RWIN> };
+    replace key <MENU> {
+        type = "PC_LALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ] 
+    };
+    modifier_map Mod5 { <PRSC>, <RWIN>, <MENU> };
 
 
     // now our most difficult key :-)
