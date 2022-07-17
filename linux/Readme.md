@@ -10,14 +10,14 @@ Test, ob das Kopieren geklappt hat:
     
 Es sollten dann ungefähr so aussehen:
 
-/usr/share/X11/xkb/rules/evdev.lst:  leicht          de: German (leichter tippen, evdev.lst)
-/usr/share/X11/xkb/rules/base.lst:  leicht          de: German (leichter tippen, base.lst)
-/usr/share/X11/xkb/rules/evdev.xml:            <name>leicht</name>
-/usr/share/X11/xkb/rules/evdev.xml:            <description>German (leichter tippen, evdev.xml)</description>
-/usr/share/X11/xkb/rules/base.xml:            <name>leicht</name>
-/usr/share/X11/xkb/rules/base.xml:            <description>German (leichter tippen, base.xml)</description>
-/usr/share/X11/xkb/symbols/de:xkb_symbols "leicht" {
-/usr/share/X11/xkb/symbols/de:    name[Group1]= "German (leichter tippen, symbols/de)";
+    /usr/share/X11/xkb/rules/evdev.lst:  leicht          de: German (leichter tippen, evdev.lst)
+    /usr/share/X11/xkb/rules/base.lst:  leicht          de: German (leichter tippen, base.lst)
+    /usr/share/X11/xkb/rules/evdev.xml:            <name>leicht</name>
+    /usr/share/X11/xkb/rules/evdev.xml:            <description>German (leichter tippen, evdev.xml)</description>
+    /usr/share/X11/xkb/rules/base.xml:            <name>leicht</name>
+    /usr/share/X11/xkb/rules/base.xml:            <description>German (leichter tippen, base.xml)</description>
+    /usr/share/X11/xkb/symbols/de:xkb_symbols "leicht" {
+    /usr/share/X11/xkb/symbols/de:    name[Group1]= "German (leichter tippen, symbols/de)";
 
 
 expert knowlege
