@@ -514,6 +514,7 @@
   ro_nodeadkeys   de: Romanian (Germany, no dead keys)
   dvorak          de: German (Dvorak)
   neo             de: German (Neo 2)
+  leicht          de: German (leichter tippen, base.lst)
   mac             de: German (Macintosh)
   mac_nodeadkeys  de: German (Macintosh, no dead keys)
   dsb             de: Lower Sorbian
