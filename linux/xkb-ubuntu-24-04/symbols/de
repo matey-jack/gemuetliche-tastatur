@@ -936,6 +936,117 @@ partial alphanumeric_keys
 	include "sun_vndr/de(sun_type6)"
 };
 
+partial alphanumeric_keys modifier_keys keypad_keys
+xkb_symbols "leicht" {
+    include "de(basic)"
+
+    name[Group1]= "German (leichter tippen, symbols/de)";
+
+    // --------------------------------------------------------------
+    //           first come all the modifiers...
+    // --------------------------------------------------------------
+    include "shift(both_capslock)"
+
+    // TODO: merge this into file ./shift
+    // TODO: decide for Shift_Lock vs Caps_Lock
+    key <CAPS> {
+        symbols[Group1] = [         Shift_L,      Caps_Lock ]
+    };
+
+    include "level3(lsgt_switch)"
+    // depending on your physical keyboard layout, there is one of the following three different keys in the position
+    // to the right of the thumb-e.
+    // TODO: this should move to its own option/partial in ./level3
+    // and it would be nice to understand better what it does!
+    // in particular, RALT still seems to be a modifier key, so I must be careful not to type it with another key...
+    key <PRSC> {
+        type = "PC_LALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ]
+    };
+    replace key <RWIN> {
+        type = "PC_LALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ]
+    };
+    replace key <MENU> {
+        type = "PC_LALT_LEVEL2",
+        symbols[Group1] = [ ISO_Level3_Shift, ISO_Level3_Shift ]
+    };
+    modifier_map Mod5 { <PRSC>, <RWIN>, <MENU> };
+
+
+    // now our most difficult key :-)
+    // "replace" keyword is crucial here to change key from "ONE_LEVEL".
+    replace key <RALT> {
+        type = "FOUR_LEVEL",
+        symbols[Group1]= [               e, E, eacute,          Eacute ]
+    };
+
+
+    // --------------------------------------------------------------
+    //               and now all the easy stuff
+    // --------------------------------------------------------------
+
+    // add Euro sign € on Level 3 of dollar $, since it is replaced with Layer 3 navigation
+    key <AE04> { [               4,          dollar,        EuroSign,        currency ] };
+
+    // shift numbers right without changing them
+    key <AE07> { [      dead_acute,      dead_grave,    dead_cedilla,     dead_ogonek ] };
+
+    key <AE08> { [               7,           slash,       braceleft,        NoSymbol ] };
+    key <AE09> { [               8,       parenleft,     bracketleft,        NoSymbol ] };
+    key <AE10> { [               9,      parenright,    bracketright,        NoSymbol ] };
+    key <AE11> { [               0,           equal,      braceright,        NoSymbol ] };
+    key <AE12> { [          ssharp,        question,       backslash,    questiondown ] };
+
+    // top row, left side: only add navigation
+    key <AD01> { [               q,               Q,              at,        NoSymbol ] };
+    key <AD02> { [               w,               W,       BackSpace,        NoSymbol ] };
+    key <AD03> { [               b,               B,              Up,              Up ] };
+
+    // top row: swapped letters and right shift
+    key <AD04> { [               f,               F,          Delete,        NoSymbol ] };
+    key <AD05> { [      odiaeresis,      Odiaeresis,          egrave,          Egrave ] };
+
+    key <AD06> { [            plus,        asterisk,        NoSymbol,        NoSymbol ] };
+
+    key <AD07> { [               z,               Z,        NoSymbol,        NoSymbol ] };
+    key <AD08> { [               k,               K,        NoSymbol,        NoSymbol ] };
+    key <AD09> { [               u,               U,       braceleft,        NoSymbol ] };
+    key <AD10> { [               o,               O,      braceright,          Oslash ] };
+    key <AD11> { [               p,               P,        NoSymbol,        NoSymbol ] };
+    key <AD12> { [      udiaeresis,      Udiaeresis,      asciitilde,        NoSymbol ] };
+
+    // middle row, left side: only add navigation
+    key <AC01> { [               a,               A,            Home,            Home ] };
+    key <AC02> { [               s,               S,            Left,            Left ] };
+    key <AC03> { [               d,               D,            Down,            Down ] };
+    key <AC04> { [               r,               R,           Right,           Right ] };
+    key <AC05> { [               g,               G,             End,             End ] };
+
+    // middle row: swapped letters and right shift
+    key <AC06> { [      apostrophe,      numbersign,        NoSymbol,        NoSymbol ] };
+    key <AC07> { [               h,               H,        NoSymbol,        NoSymbol ] };
+    key <AC08> { [               n,               N,          ntilde,          Ntilde ] };
+    key <AC09> { [               i,               I,       parenleft,     bracketleft ] };
+    key <AC10> { [               l,               L,      parenright,    bracketright ] };
+    key <AC11> { [               t,               T,       semicolon,        NoSymbol ] };
+    key <BKSL> { [      adiaeresis,      Adiaeresis,          agrave,          Agrave ] };
+
+    // bottom row, left side: only salvage the | which had lost its key
+    key <AB01> { [               y,               Y,             bar,       brokenbar ] };
+    // pour nos amis français
+    key <AB03> { [               c,               C,        ccedilla,        Ccedilla ] };
+
+    // bottom row: swapped letters
+    key <AB05> { [           slash,       backslash,        NoSymbol,        NoSymbol ] };
+    key <AB06> { [           minus,      underscore,          endash,          emdash ] };
+    key <AB07> { [               j,               J,           equal, rightsinglequotemark ] };
+    key <AB08> { [               m,               M,              mu,       masculine ] };
+    key <AB09> { [           comma,       semicolon,            less,        multiply ] };
+    key <AB10> { [          period,           colon,         greater,        division ] };
+
+};
+
 partial alphanumeric_keys
 xkb_symbols "adnw_base" {
     include "de(neo_base)"
