@@ -1,0 +1,23 @@
+{
+  "name": "Leichter Tippen Tastaturbelegung",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Das gemütliche Tastaturlayout für die deutsche Sprache und Programmierer, basierend auf der deutschen QWERTZ Tastatur.",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "input"
+  ],
+  "input_components": [
+    {
+      "name": "Leichter Tippen",
+      "type": "ime",
+      "id": "leichter-tippen-remap-layout",
+      "description": "Das gemütliche Tastaturlayout für die deutsche Sprache und Programmierer, basierend auf der deutschen QWERTZ Tastatur.",
+      "language": "de-DE",
+      "layouts": ["de"]
+    }
+  ]
+}
+
