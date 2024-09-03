@@ -1,3 +1,6 @@
+TODO: hartes drüber kopieren wie unten beschrieben, überschreibt Updates von neueren xkb Releases. 
+Besser wäre es, die Konfiguration als Patch zu speichern, sodass sie per "merge" angewendet werden kann.
+
 Leider ist die Installation noch etwas krude:
 
     sudo cp -r ./xkb/* /usr/share/X11/xkb
