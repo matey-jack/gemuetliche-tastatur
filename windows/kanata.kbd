@@ -1,0 +1,19 @@
+(defsrc 
+tab
+          bspc
+z k u o p
+h n i l t )
+
+(deflayer base
+(tap-hold         200 200 tab (layer-while-held navigation))
+                               _
+_ _ _ _ _
+_ _ _ _ _
+)
+
+(deflayer navigation
+_
+         del
+bspc pgup up pgdn del
+home left down right end
+)

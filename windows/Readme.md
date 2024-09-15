@@ -1,10 +1,17 @@
 
-Das ganze Layout besteht aus zwei Teilen, da sich Tasten wie Caps und AltGr nur über die Registry ändern lassen, nicht über das Layout. Als Anwender muss man also:
+Das ganze Layout besteht aus drei Teilen, da sich Tasten wie Caps und AltGr nur über die Registry ändern lassen, nicht über das Layout. Und Cursor-Tasten lassen sich auch nicht wie in XKB mittels AltGr erzeugen, also brauchen wir dafür noch ein anderes Tool.
+
+Als Anwender muss man also:
  1. eine Datei in die Registry spielen 
  2. das eigentliche Keyboard-Layout installieren
+ 3. (nur für Blind Navigation features) Kanata installieren und mir der beigelegten Konfiguration ausführen.
 
 Danach kann man wie gewohnt zwischen den verschiedenen Layouts wechseln, wobei aber die AltGr Taste in allen Layouts umbelegt ist. (In meiner Familie verwenden alle das altdeutsche Layout und haben sich an die verschobene AltGr-Taste gewöhnt.)
- 
+Da sich die Kanata-Konfiguration leider auf das zu Grunde liegende Windows-Layout bezieht, 
+braucht man eine eigene Konfig, um Blind Navigation auch im Qwerty oder einem anderen Layout zu verwenden.
+Aber natürlich kann man in diesem Fall (wenn z.B. ohnehin jemand anders den Computer benutzt),
+einfach Kanata nicht starten.
+
 ## Der Registry-Teil
  - Die Registry-Änderung ist sehr klein und man kann sie sich selbst genau anschauen, um zu sehen, dass hier nichts bösartiges geschieht. [Hier gibt es eine kurze Erklärung dazu.](registry-mappings/registry_mapping_codes.txt)
  
@@ -27,7 +34,7 @@ Wer auf die CapsLock- und AltGr-Änderung verzichten möchte, kann das Registry-
  - Damit auch Strg-F auf dem richtigen F liegt und Strg-O auf dem richtigen O, müssen wir, wie [hier beschrieben]( https://www.zybuluo.com/torresdyl/note/774240), die VK-Spalten in der KLC-Datei auch ändern. (Weiß nicht, ob der graphische Editor das macht...)
 
 Was bisher noch fehlt und ggf mit AutoHotKey (AHK) realisiert werden könnte:
- - Shift+Backspace und/oder Dritt+Backspace
+ - Shift+Backspace und/oder Dritt+Backspace als "Entf" benutzen
  - Pfeiltasten auf Dritter Ebene  -->  aber genau mit der dritten Ebene hatte AHK ja schon Probleme...
  - Ersatz für Capslock
  
@@ -35,3 +42,26 @@ Was bisher noch fehlt und ggf mit AutoHotKey (AHK) realisiert werden könnte:
 
 
 Alternativ vielleicht mal http://www.kbdedit.com/ ausprobieren, aber da würde ich auch gern wissen, wie es implementiert ist (Registry-Mapping, eigener Treiber, Hotkey-Listener, Windows-Layout, ...) 
+
+# Blind Navigation mittels Kanata
+
+Anders als in Linux habe ich hier die "tab" Taste als Layer-Mapper verwendet und die Navigation passiert entsprechend mit der linken Hand. 
+Grund dafür ist, dass ich kein Risiko von Belegungskonflikten eingehen wollte. 
+So wird die AltGr-Belegung vom Windows-Tastaturlayout gemanaged und Blind Navigation über Kanata.
+
+Im Gegensatz zu Linux funktionieren dadurch auch Strg+Navi Befehle, wie zum Beispiel:
+ - Strg+Rechts/Links springt wortweise
+ - Strg+Backdelete löscht ganze Wörter
+ - Strg+Anfang/Ende springt zum Anfang/Ende des Dokuments
+
+Zur Installation muss man:
+ - sich [Kanata von Github](https://github.com/jtroo/kanata/releases/tag/v1.6.1) herunterladen. 
+ - Die `kanata.exe` irgendwo ablegen und [kanata.kbd](kanata.kbd) im selben Verzeichnis daneben legen. 
+
+Leider muss man dann das Ganze noch von der Kommandozeile starten. 
+
+TODO: 
+ - es gibt dafür Automatisierungen, diese mal ausprobieren.
+ - leider ist es ziemlich unpraktisch Tab + Strg gleichzeitig mit der linken Hand zu halten. 
+   (Erst kleiner Finger blind auf Tab, dann die ganze Hand heben damit der Daumen zu Strg kommt. 
+   Vielleicht ist das aber immer noch besser als die sehr kleine "fn" Taste zu benutzen.)
