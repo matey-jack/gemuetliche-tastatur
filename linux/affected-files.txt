@@ -1,0 +1,12 @@
+/usr/share/X11/xkb/...
+
+rules/evdev.lst
+rules/base.lst
+add one line after the entry for NEO:
+  leicht          de: German (leichter tippen, base.lst)
+
+rules/evdev.xml
+rules/base.xml
+
+symbols/de
+

@@ -22,6 +22,9 @@ Es sollten dann ungefähr so aussehen:
     /usr/share/X11/xkb/symbols/de:xkb_symbols "leicht" {
     /usr/share/X11/xkb/symbols/de:    name[Group1]= "German (leichter tippen, symbols/de)";
 
+Wie man ein Bild davon bekommt:
+
+    setxkbmap -print -layout de -variant leicht | xkbcomp -xkm - - | xkbprint - xkb-de-leicht-layout.pdf
 
 expert knowlege
 ===============
