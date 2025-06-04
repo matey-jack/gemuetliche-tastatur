@@ -9,9 +9,26 @@ Nerd-Version:
 https://msdn.microsoft.com/windows/hardware/drivers/hid/keyboard-and-mouse-class-drivers
 Ctrl+F for "Scan code mapper for keyboards"
 
-
 caps lock 003a
 left shift 002a
+==> more keys see scancodes.txt
+
+Here's an actual example, comments refer to the next line:
+"Scancode Map"=hex:00,00,00,00,00,00,00,00,\
+This says, we have four entries coming up:
+  05,00,00,00,\
+Read CapsLock key as Shift
+  2a,00,3a,00,\
+Read right Alt key as (some keycode that we'll later map to E)
+  08,00,38,e0,\
+Read PrintScr as right Alt (on my Thinkpad laptop, PrintScr is right next to right Alt, thus good replacement)
+  38,e0,37,e0,\
+Read "ISO key" (in German Layout <>) as right Alt.
+  38,e0,56,00,\
+  00,00,00,00
+
+
+
 
 Leider zeigt KeyTweak den Code erst an, wenn es ihn schon in die Registry geschrieben hat!
 nur bei den einfachen Tasten sind die Nummern auf der angezeigten Tastatur gleich denen in der Registry.
