@@ -1,6 +1,8 @@
 
 # Das Gemütliche Tastaturlayout!
 
+_Aktuelle Notiz: Elf Jahre nachdem ich mir das hier ausgedacht habe, verwende ich es immer noch, allerdings zurzeit mit einer Hardware-programmierbaren Tastatur. [Beschreibung hier als Google Sheet](https://docs.google.com/spreadsheets/d/1JkIiKLAgzVKIijrSS0zbML-NLrd7E52zQ_xwXzjz3oQ/edit?usp=sharing) Implementierung ist noch im Flux, aber von dort verlinkt._
+
 Die heutige Standard-Tastaturbelegung ist immernoch gleich den Schreibmaschinen aus dem 19. Jahrhundert. Alternative wie Dvorak oder Neo2 machen das Tippen deutlich leichter, sind aber sehr schwer zu lernen, wenn mensch zwischendurch auch immer mal wieder auf den kaiserzeitlichen Tastaturen tippen muss.
 
 Das Gemütliche Tastaturlayout ist der perfekte Kompromiss, da es die häufigsten Buchstaben zentraler belegt und dabei trotzdem viele bewährte Tastenkombinationen unverändert lässt.
@@ -38,7 +40,7 @@ Auch auf der Shift-Ebene sind die Sonderzeichen ähnlich zu QWERT. Neben der Mit
    QWBFÖ * ZKUOPÜ
 ⇧  ASDRG # HNILTÄ
 ⇧¤ YXCV \_ JM;: ⇧
-      LEER e ¤
+      LEER E ¤
 ```
 
 Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen QWERTZ Tastatur, die teilweise voneinander unabhängig sind, aber hier alle zu einem einheitlichen Ganzen gemacht wurden:
@@ -46,18 +48,18 @@ Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen 
  * Grundposition der rechten Hand ist um eine Reihe nach rechts verschoben, was gleich mehrere Vorteile hat:
    + Hände sind weiter auseinander und dadurch sind (wie bei einer Ergo-Tastatur) die Arme entspannter
    + kleiner Finger kommt viel leichter an ENTER, BACKSPACE, SHIFT
-   + es wird neben der Leertaste ein Platz für das E frei, welches mit dem Daumen bedient werden kann. Dadurch gibt es 9 statt sonst nur 8 Ruhepositionen für Buchstaben und es können sowohl D als auch L auf der Grundreihe bleiben ohne dass einer von Ihnen dem E weichen müsste.
-   + die rechteste Tastenspalte (+ ' -) kommt in die Mitte, so dass sie von beiden Händen erreicht werden kann. Besonders praktisch ist das für's ' welches im Englischen häufig vorkommt. Auch wenn + und - für Zoom verwendet werden, während rechte Hand auf der Maus ist.
+   + es wird neben der Leertaste ein Platz für das E frei, welches mit dem Daumen bedient werden kann. Dadurch gibt es 9 statt sonst nur 8 Ruhepositionen für Buchstaben und es können sowohl D als auch L auf der Grundreihe bleiben, ohne dass einer von Ihnen dem E weichen müsste.
+   + die rechteste Tastenspalte (+ ' -) kommt in die Mitte, sodass sie von beiden Händen erreicht werden kann. Besonders praktisch ist das für's ' welches im Englischen häufig vorkommt. Auch wenn + und - für Zoom verwendet werden, während rechte Hand auf der Maus ist.
 
  * Die 9 häufigsten Buchstaben der deutschen Sprache (und damit auch 7 oder 8 häufigsten der englischen Sprache) liegen auf der Grundreihe A S D R    N I L T und das E auf dem Daumen. Die Buchstaben, welche dafür "Platz machen" und die Grundreihe verlassen, kommen in eine Position, die ihrer Häufigkeit angemessen ist: K und U, sowie F sind häufiger und bekommen gute Plätze, J und Ö sind selten und bekommen, was übrig bleibt.
  
- * Viele im Deutschen (und teilweise Englischen) sehr häufige Bigramme (Buchstabenpaare) liegen auf der Standard-Tastatur auf demselben Finger, wodurch das Tippen viel langsamer wird. Im gemütlichen Layout hingegen liegen ED, UN, IN, BE und viele weitere jetzt auf unterschiedlichen Fingern, so dass beim schnellen Tippen schon der zweite Finger in Position gehen kann, während der erste gerade anschlägt. (Wahrscheinlich ist es Dir noch nie aufgefallen, aber die Finger machen so etwas von ganz allein, wenn man viel tippt. Selbst wenn man nie offiziell ein Layout gelernt hat!)
+ * Viele im Deutschen (und teilweise Englischen) sehr häufige Bigramme (Buchstabenpaare) liegen auf der Standard-Tastatur auf demselben Finger, wodurch das Tippen viel langsamer wird. Im gemütlichen Layout hingegen liegen ED, UN, IN, BE und viele weitere jetzt auf unterschiedlichen Fingern, sodass beim schnellen Tippen schon der zweite Finger in Position gehen kann, während der erste gerade anschlägt. (Wahrscheinlich ist es Dir noch nie aufgefallen, aber die Finger machen so etwas von ganz allein, wenn man viel tippt. Selbst wenn man nie offiziell ein Layout gelernt hat!)
  
- * Aber das ist noch nicht alles: die selten genutzt Caps-Lock-Taste wird zu Shift umfunktioniert, was den linken kleinen Finger erheblich entlastet! Rechts könnten wir mit Shift auf Ä ähnliches tun, aber durch die neue Position der rechten Hand, ist Shift bereits viel leichter zu erreichen! Zudem bleiben die originalen Positionen von Shift beide erhalten, so dass Arbeiten mit Kombination von Maus und Pfeiltasten wie immer von statten gehen. Das ist wichtig, weil mensch ja dann die Hände oft nicht in Grundposition hat!
+ * Aber das ist noch nicht alles: die selten genutzte Caps-Lock-Taste wird zu Shift umfunktioniert, was den linken kleinen Finger erheblich entlastet! Rechts könnten wir mit Shift auf Ä ähnliches tun, aber durch die neue Position der rechten Hand, ist Shift bereits viel leichter zu erreichen! Zudem bleiben die originalen Positionen von Shift beide erhalten, sodass Arbeiten mit Kombination von Maus und Pfeiltasten wie immer von statten gehen. Das ist wichtig, weil mensch ja dann die Hände oft nicht in Grundposition hat!
  
- * Schließlich gibt es die AltGr-Taste (¤ in obigem Bild) nun zwei Mal, so dass sich auf allen Tasten eine dritte Belegung (neben Shift und nicht-Shift) ergibt, die im gemütlichen Layout mehrfach genutzt wird: 
+ * Schließlich gibt es die AltGr-Taste (¤ in obigem Bild) nun zweimal, sodass sich auf allen Tasten eine dritte Belegung (neben Shift und nicht-Shift) ergibt, die im gemütlichen Layout mehrfach genutzt wird: 
   + unter der linken Grundreihe bringt AltGr Navigationstasten hervor: Pfeile, Anfang/Ende, Bild auf/ab. Gerade bei Laptops ist das sehr nützlich, weil diese Tasten je nach Modell anders liegen und oft schwer erreichbar sind! (Besonders leicht zu merken ist AltGr+A für Anfang, auch weil Strg+A bei vielen Unix-Programmen schon seit Jahrzehnten dasselbe macht. ;)
-  + Auf der rechten Seite sind alle Klammern erreichbar, was sowohl bei normalen Texten hilft, da () auf der Grundreihe liegen, aber auch Programmierer immens unterstützt, da alle Klammer-Paare mit denselben beiden Fingern auf unterschiedlichen Reihen bedient werden. [] liegt dabei auf der Standard-Position, die sich aber dank dem linken AltGr viel leichter tippen lässt. () wie gesagt auf der Grundreihe, {} zwischen beiden und <> darunter.
+  + Auf der rechten Seite sind alle Klammern erreichbar, was sowohl bei normalen Texten hilft, da () auf der Grundreihe liegen, als auch Programmierer immens unterstützt, da alle Klammer-Paare mit denselben beiden Fingern auf unterschiedlichen Reihen bedient werden. [] liegt dabei auf der Standard-Position, die sich aber dank dem linken AltGr viel leichter tippen lässt. () wie gesagt auf der Grundreihe, {} zwischen beiden und <> darunter.
  
 TODO: Außerdem wäre Shift+Backspace eine tolle Variante für Entf, da leicht zu merken und genau wie beim Mac. (Sicherheitshalber auch AltGr+Backspace, falls es manche Programme überschreiben.) Allerdings bin ich nicht sicher, dass sich so eine Umbelegung nur über die Layout-Konfiguration machen lässt.
 
@@ -127,7 +129,7 @@ Insgesamt sind nur 11 von 30 Buchstaben verändert (wenn die Verschiebung der Gr
 # Installation je nach Betriebssystem
 
 - [Doku zur Linux Version](linux/Readme.md) --> diese funktioniert insbesondere auch bei neueren Linux-Systemen mit Wayland (z.B. Ubuntu ab Version 17.10 bzw. 18.04)
-- [Linux xkb Version](https://github.com/matey-jack/keyboard-layer3) --> funktioniert auch ohne Root-Rechte, aber nicht mehr mit Wayland. Ich werde diese Version auch nicht mehr pflegen. Ist vielleicht leichter zum Ausprobieren, aber langfristig bitte diese hier verwenden.
+- [Linux xkb Version](https://github.com/matey-jack/keyboard-layer3/tree/gemuetliche-tastatur-xkb) --> funktioniert auch ohne Root-Rechte, aber nicht mehr mit Wayland. Ich werde diese Version auch nicht mehr pflegen. Ist vielleicht leichter zum Ausprobieren, aber langfristig bitte diese hier verwenden.
 - [Doku zur MacOs Version](macOS/Readme.md)
 - [Doku zur Windows-Version](windows/Readme.md)
 
