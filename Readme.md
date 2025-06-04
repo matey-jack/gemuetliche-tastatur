@@ -3,6 +3,9 @@
 
 _Aktuelle Notiz: Elf Jahre nachdem ich mir das hier ausgedacht habe, verwende ich es immer noch, allerdings zurzeit mit einer Hardware-programmierbaren Tastatur. [Beschreibung hier als Google Sheet](https://docs.google.com/spreadsheets/d/1JkIiKLAgzVKIijrSS0zbML-NLrd7E52zQ_xwXzjz3oQ/edit?usp=sharing) Implementierung ist noch im Flux, aber von dort verlinkt._
 
+_Vielleicht auch interessant: wer nur einen besseren Zugriff auf Sonderzeichen wünscht, ohne Buchstaben umzubelegen, kann sich mal https://github.com/matey-jack/keyboard-layer3 ansehen. Das ist ein Layout, die die "AltGr-Ebene" (AltGr layer) wesentlich besser ausnutzt!_
+
+
 Die heutige Standard-Tastaturbelegung ist immernoch gleich den Schreibmaschinen aus dem 19. Jahrhundert. Alternative wie Dvorak oder Neo2 machen das Tippen deutlich leichter, sind aber sehr schwer zu lernen, wenn mensch zwischendurch auch immer mal wieder auf den kaiserzeitlichen Tastaturen tippen muss.
 
 Das Gemütliche Tastaturlayout ist der perfekte Kompromiss, da es die häufigsten Buchstaben zentraler belegt und dabei trotzdem viele bewährte Tastenkombinationen unverändert lässt.
