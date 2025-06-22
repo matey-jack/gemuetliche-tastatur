@@ -1,0 +1,8 @@
+map physical AltGr to logical <> key  –– this works because the latter logical key is unused after we mapped AltGr there!
+
+This allows us to map E to the thumb on the software layout without much impact to other layouts.
+
+As long as one user types blindly (which I am used to from my work laptop), the other can even use the normal labeled keyboard.
+
+And I can use my full GL including thumb E!!
+
