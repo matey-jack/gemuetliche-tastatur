@@ -3,7 +3,7 @@
 
 _Aktuelle Notiz: Elf Jahre nachdem ich mir das hier ausgedacht habe, verwende ich es immer noch, allerdings zurzeit mit einer Hardware-programmierbaren Tastatur. [Beschreibung hier als Google Sheet](https://docs.google.com/spreadsheets/d/1JkIiKLAgzVKIijrSS0zbML-NLrd7E52zQ_xwXzjz3oQ/edit?usp=sharing) Implementierung ist noch im Flux, aber von dort verlinkt._
 
-_Vielleicht auch interessant: wer nur einen besseren Zugriff auf Sonderzeichen wünscht, ohne Buchstaben umzubelegen, kann sich mal https://github.com/matey-jack/keyboard-layer3 ansehen. Das ist ein Layout, die die "AltGr-Ebene" (AltGr layer) wesentlich besser ausnutzt!_
+_Vielleicht auch interessant: wer nur einen besseren Zugriff auf Sonderzeichen wünscht, ohne Buchstaben umzubelegen, kann sich mal https://github.com/matey-jack/keyboard-layer3 ansehen. Das ist ein Layout, welches die "AltGr-Ebene" (AltGr layer) wesentlich besser ausnutzt!_
 
 
 Die heutige Standard-Tastaturbelegung ist immernoch gleich den Schreibmaschinen aus dem 19. Jahrhundert. Alternative wie Dvorak oder Neo2 machen das Tippen deutlich leichter, sind aber sehr schwer zu lernen, wenn mensch zwischendurch auch immer mal wieder auf den kaiserzeitlichen Tastaturen tippen muss.
@@ -13,20 +13,23 @@ Viel leichter Tippen – und viel leichter lernen oder vom/zum Standard-Layout w
 
 Optimal für Deutsche Tastatur sowohl für die deutsche als auch die englische Sprache! (Andere Sprachen kann mensch natürlich auch mit einigen Vorteilen tippen.) Außerdem Vorteile für Programmierer und Laptop-Nutzer!
 
-Das gemütliche Layout ist eine Tastaturbelegung, die das Tippen leichter und bequemer macht und dabei noch die Gelenke schont. Im Gegensatz zu Dvorak und Neo werden nicht alle Tasten neu belegt, so dass das Lernen um ein vielfaches leichter ist. Auch behalten viele sehr wichtige Tastenkombinationen ihre Gültigkeit:
+Das gemütliche Layout ist eine Tastaturbelegung, die das Tippen leichter und bequemer macht und dabei noch die Gelenke schont. Im Gegensatz zu Dvorak und Neo werden nicht alle Tasten neu belegt, sodass das Lernen um ein vielfaches leichter ist. Auch behalten viele sehr wichtige Tastenkombinationen ihre Gültigkeit:
  - Strg-X, -C, -V, -S, -W liegen auf derselben Position und können blind bedient werden, egal welches Layout aktiv ist und ob die Hände in Schreibposition liegen oder nicht.
  - Strg-Z, -O, -P liegen auf derselben relativen Position zur rechten Hand und können blind bedient werden, wenn die Hand auf der Tastatur ruht. 
  - Strg-N, -T, -R, -F sind leider verändert, was aber weniger stört, da hier ein Bedienfehler weniger schlimm ist als das "ich wollte eigentlich speichern, habe aber stattdessen das Fenster geschlossen", welches mir in Neo mehrmals passiert ist. (Das war einer der Hauptgründe für die Entwicklung des gemütlichen Layouts.)
 
 Hier eine grobe Übersicht der Belegung:
 
-### Standard-Tastatur
+### Erstmal zur Orientierung: die Standard-Tastatur
 
 ```
     qwert zuiopü+
 ⇪  asdfg hjklöä#
 ⇧ <yxcvb nm,.-
+      LEER ¤
 ```
+
+Neben der Leertaste liegt AltGr (symbolisiert als ¤) und daneben natürlich beiderseits noch weitere Tasten.
 
 ### Das gemütliche Layout
 
@@ -37,7 +40,8 @@ Hier eine grobe Übersicht der Belegung:
       LEER e ¤
 ```
 
-Auch auf der Shift-Ebene sind die Sonderzeichen ähnlich zu QWERT. Neben der Mittelspalte, die vom rechten Rand übernommen wurde, sind eigentlich nur / und \ auf der alten Position des B geändert:
+Die Shift-Belegung der Tasten ist gleich zu Qwert, außer dass `'` und `#` vertauscht wurden, weil ersteres viel häufiger verwendet wird.
+(Besonders wenn man auch English schreibt und/oder programmiert.)
 
 ```
    QWBFÖ * ZKUOPÜ
@@ -45,6 +49,9 @@ Auch auf der Shift-Ebene sind die Sonderzeichen ähnlich zu QWERT. Neben der Mit
 ⇧¤ YXCV \_ JM;: ⇧
       LEER E ¤
 ```
+
+Hier auf echter Hardware:
+![Laptop mit der Gemütlichen Tastaturbelegung](Laptop%20with%20wide%20letter%20layout%20and%20thumb-E.jpg)
 
 Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen QWERTZ Tastatur, die teilweise voneinander unabhängig sind, aber hier alle zu einem einheitlichen Ganzen gemacht wurden:
 
@@ -64,7 +71,6 @@ Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen 
   + unter der linken Grundreihe bringt AltGr Navigationstasten hervor: Pfeile, Anfang/Ende, Bild auf/ab. Gerade bei Laptops ist das sehr nützlich, weil diese Tasten je nach Modell anders liegen und oft schwer erreichbar sind! (Besonders leicht zu merken ist AltGr+A für Anfang, auch weil Strg+A bei vielen Unix-Programmen schon seit Jahrzehnten dasselbe macht. ;)
   + Auf der rechten Seite sind alle Klammern erreichbar, was sowohl bei normalen Texten hilft, da () auf der Grundreihe liegen, als auch Programmierer immens unterstützt, da alle Klammer-Paare mit denselben beiden Fingern auf unterschiedlichen Reihen bedient werden. [] liegt dabei auf der Standard-Position, die sich aber dank dem linken AltGr viel leichter tippen lässt. () wie gesagt auf der Grundreihe, {} zwischen beiden und <> darunter.
  
-TODO: Außerdem wäre Shift+Backspace eine tolle Variante für Entf, da leicht zu merken und genau wie beim Mac. (Sicherheitshalber auch AltGr+Backspace, falls es manche Programme überschreiben.) Allerdings bin ich nicht sicher, dass sich so eine Umbelegung nur über die Layout-Konfiguration machen lässt.
 
 ### Bequemere Sonderzeichen – nicht nur für Programmierer
 
@@ -90,11 +96,21 @@ Volles Bild der dritten Ebene mitte und rechts:
 – =µ<>
 ```
 
-Wie man leicht sieht, sind die Standard-Positionen von {} \ ~ und µ erhalten (außerdem sind ; : / * wie im Standard per Shift zu erreichen), aber zusätzlich sind viele Tasten nochmal auf dieser Ebene erhalten, so dass man einfach das linke AltGr gedrückt halten kann, um häufige Programmierer-Bigramme einzugeben:   http:// oder ~/ und \* auf der Shell oder ); und <= oder >=. Ebenso leicht gehen auch die Smileys :*) (Das Bigramm != kann man weiterhin durch gedrückte Shift-Taste und die unveränderten Standard-Positionen von ! und = eingeben.) TODO: nach Belegung von / auf der Hauptebene dies und die Shift-Ebene der Satzzeichen nochmal überarbeiten.
+TODO: zur Angleichung mit dem Iris-Layout folgende Änderungen:
+ - µ in home row schieben und unten `×=<>` nebeneinander legen
+ - nochmal bei Iris und Layer-3 Layout nachschauen, damit `ñ` und c-cedile gleich belegt sind.
+ - das L3 Bigramm ); brauche ich wahrscheinlich auch nicht mehr, da (bei Laptop-Tasturen, nicht der Iris) beide Zeichen ja auf der Shift-Ebene liegen, das ist leicht genug. (Und bei der Iris kann ich es leicht einfügen, falls ich es wirklich brauchen sollte...) 
+ - Heutzutage tippe ich tatsächlich weniger Dinge wie `~/` und `\*`  ... immerhin ist letzteres bei der Iris beides auf der Shift-Ebene!
+
+TODO-DO: vielleicht kann ich in diesem Zusammenhang auch den Laptop nutzen, um ein neues Iris-Support-Layout zu kompilieren. Vielleicht ist es einfacher, weil das Layout dort nicht installiert ist.
+ 
+Wie man leicht sieht, sind die Standard-Positionen von `{} \ ~` und `µ` erhalten (außerdem sind `; : / *` wie im Standard per Shift zu erreichen), aber zusätzlich sind viele Tasten nochmal auf dieser Ebene erhalten, so dass man einfach das linke AltGr gedrückt halten kann, um häufige Programmierer-Bigramme einzugeben:   `http://` oder `~/` und `\*` auf der Shell oder `);` und `<=` oder `>=`. Ebenso leicht gehen auch die Smileys `:*)` (Das Bigramm `!=` kann man weiterhin durch gedrückte Shift-Taste und die unveränderten Standard-Positionen von ! und = eingeben.) 
+
+TODO: nach Belegung von / auf der Hauptebene dies und die Shift-Ebene der Satzzeichen nochmal überarbeiten.
 
 ### Die neue Belegung der Buchstaben
 
-Die deutsche Tastatur hat (wie viele andere internationale Varianten) eine Taste mehr als die amerikanische und das kann man prima ausnutzen! Außerdem haben alle Tastaturen heutzutage auch zwei Windows-Tasten plus eine Kontext-Taste, die teils in sehr guter Lage sind, aber wenig genutzt werden. Daher belegen wir die rechte Windows-Taste um und machen unter dem rechten Daumen Platz für einen der häufigsten Buchstaben unserer (und vieler anderer) Sprachen: das E. AltGr rutscht entsprechend einen Platz nach rechts und liegt damit relativ zur ebenfalls verschobenen Grundposition der rechten Hand wieder gleich.
+Die deutsche Tastatur hat (wie viele andere internationale Varianten) eine Taste mehr als die amerikanische und das kann man prima ausnutzen! Außerdem haben alle Tastaturen heutzutage auch zwei Windows-Tasten plus eine Kontext-Taste, die teils in sehr guter Lage sind, aber wenig genutzt werden. Daher belegen wir die rechte Windows-Taste um und machen unter dem rechten Daumen Platz für einen der häufigsten Buchstaben unserer (und vieler anderer) Sprachen: das `E`. AltGr rutscht entsprechend einen Platz nach rechts und liegt damit relativ zur ebenfalls verschobenen Grundposition der rechten Hand wieder gleich.
 
 Wenige einfache Tausche machen aus der Standard-Tastatur eine bequeme Tastatur! Neben den qualitativen Aspekten, die ich hier zur Erklärung anführe, lässt sich das auch anhand von standardisierten Bewertungen zeigen. Hier zum Beispiel die Bewertung des Optimier-Tools mit welchem die Neo-Layout Gemeinschaft ihr neues Layout entwickelt hat:
 
@@ -111,20 +127,23 @@ Leider können die vorgefertigten automatischen Layout-Bewerter nicht mit dem Da
 
 Zudem kann mensch die Änderungen auch noch schrittweise lernen:
 
-1. N tauscht mit J – einer der häufigsten Buchstaben kommt damit auf die Grundreihe und das seltene J nach unten. Leicht zu lernen, da der Finger für beide Buchstaben gleich bleibt!
-2. I tauscht mit K und danach K mit U – Mit N und I gibt es ein starkes Paar auf der Grundreihe, dass viele sehr häufige Wörter schon einfacher macht. Durch die Bewegung von K erleichtert sich gleichzeitig die Bigramme UN (zweit-häufigstes im Deutschen, auch häufig im Englischen) und ZU. 
+1. `N` tauscht mit `J` – einer der häufigsten Buchstaben kommt damit auf die Grundreihe und das seltene J nach unten. Leicht zu lernen, da der Finger für beide Buchstaben gleich bleibt!
 
-Diese beiden Änderungen kann man als ersten Schritt separat lernen und schon viel Erleichterung damit erfahren! Sind sind in der Tabelle oben als "leicht-ni" aufgeführt.
+2. `I` tauscht mit `K` und danach `K` mit `U` – Mit N und I gibt es ein starkes Paar auf der Grundreihe, das viele sehr häufige Wörter schon einfacher macht. 
+   Durch die Bewegung von K erleichtern sich gleichzeitig die Bigramme `UN` (zweit-häufigstes im Deutschen, auch häufig im Englischen) und `ZU`. 
+
+   Diese beiden Änderungen kann man als ersten Schritt separat lernen und schon viel Erleichterung damit erfahren! Sie sind in der Tabelle oben als "leicht-ni" aufgeführt.
 
 3. T tauscht die Hand mit Ö – ein sehr häufiger Buchstabe kommt auf die Grundreihe und gleichzeitig bekommt die im Standard unterlastete rechte Hand etwas mehr zu tun. Dadurch werden z.B. auch einige häufige Bigramme auf die beiden Hände verteilt – besonders RT und TR profitieren, weil sie vorher denselben Finger benutzt haben.
 
-Das ist "leicht-nit" aus der Tabelle oben. In dieser Variante habe ich eine Zeit lang normal gearbeitet, während ich den Rest des Layouts noch entwickelte!
+   Das ist "leicht-nit" aus der Tabelle oben. In dieser Variante habe ich eine Zeit lang normal gearbeitet, während ich den Rest des Layouts noch entwickelte!
 
 4. R tauscht mit F – ein weiterer häufiger Buchstabe kommt auf die Grundreihe. Wem sehr an der Erhaltung von Strg+R und Strg+F liegt, kann diese Änderung auch weglassen!
 
 5. Schließlich liegt B viel besser auf dem nun freien Platz des E
 
-Insgesamt sind nur 11 von 30 Buchstaben verändert (wenn die Verschiebung der Grundposition außer acht lässt). ANDW verändert sogar 32 Zeichen, denn auch . und , sind total verändert, andere Position, anderer Finger, oft auch andere Hand.
+Insgesamt sind nur 11 von 30 Buchstaben verändert (wenn die Verschiebung der Grundposition außer Acht lässt). 
+ANDW verändert sogar 32 Zeichen, denn auch `.` und `,` sind total verändert, andere Position, anderer Finger, oft auch andere Hand.
 
 
 
