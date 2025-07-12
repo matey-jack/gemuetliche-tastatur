@@ -13,20 +13,23 @@ Viel leichter Tippen – und viel leichter lernen oder vom/zum Standard-Layout w
 
 Optimal für Deutsche Tastatur sowohl für die deutsche als auch die englische Sprache! (Andere Sprachen kann mensch natürlich auch mit einigen Vorteilen tippen.) Außerdem Vorteile für Programmierer und Laptop-Nutzer!
 
-Das gemütliche Layout ist eine Tastaturbelegung, die das Tippen leichter und bequemer macht und dabei noch die Gelenke schont. Im Gegensatz zu Dvorak und Neo werden nicht alle Tasten neu belegt, so dass das Lernen um ein vielfaches leichter ist. Auch behalten viele sehr wichtige Tastenkombinationen ihre Gültigkeit:
+Das gemütliche Layout ist eine Tastaturbelegung, die das Tippen leichter und bequemer macht und dabei noch die Gelenke schont. Im Gegensatz zu Dvorak und Neo werden nicht alle Tasten neu belegt, sodass das Lernen um ein vielfaches leichter ist. Auch behalten viele sehr wichtige Tastenkombinationen ihre Gültigkeit:
  - Strg-X, -C, -V, -S, -W liegen auf derselben Position und können blind bedient werden, egal welches Layout aktiv ist und ob die Hände in Schreibposition liegen oder nicht.
  - Strg-Z, -O, -P liegen auf derselben relativen Position zur rechten Hand und können blind bedient werden, wenn die Hand auf der Tastatur ruht. 
  - Strg-N, -T, -R, -F sind leider verändert, was aber weniger stört, da hier ein Bedienfehler weniger schlimm ist als das "ich wollte eigentlich speichern, habe aber stattdessen das Fenster geschlossen", welches mir in Neo mehrmals passiert ist. (Das war einer der Hauptgründe für die Entwicklung des gemütlichen Layouts.)
 
 Hier eine grobe Übersicht der Belegung:
 
-### Standard-Tastatur
+### Erstmal zur Orientierung: die Standard-Tastatur
 
 ```
     qwert zuiopü+
 ⇪  asdfg hjklöä#
 ⇧ <yxcvb nm,.-
+      LEER ¤
 ```
+
+Neben der Leertaste liegt AltGr (symbolisiert als ¤) und daneben natürlich beiderseits noch weitere Tasten.
 
 ### Das gemütliche Layout
 
@@ -37,7 +40,8 @@ Hier eine grobe Übersicht der Belegung:
       LEER e ¤
 ```
 
-Auch auf der Shift-Ebene sind die Sonderzeichen ähnlich zu QWERT. Neben der Mittelspalte, die vom rechten Rand übernommen wurde, sind eigentlich nur / und \ auf der alten Position des B geändert:
+Die Shift-Belegung der Tasten ist gleich zu Qwert, außer dass `'` und `#` vertauscht wurden, weil ersteres viel häufiger verwendet wird.
+(Besonders wenn man auch English schreibt und/oder programmiert.)
 
 ```
    QWBFÖ * ZKUOPÜ
@@ -45,6 +49,9 @@ Auch auf der Shift-Ebene sind die Sonderzeichen ähnlich zu QWERT. Neben der Mit
 ⇧¤ YXCV \_ JM;: ⇧
       LEER E ¤
 ```
+
+Hier auf echter Hardware:
+![Laptop mit der Gemütlichen Tastaturbelegung](Laptop%20with%20wide%20letter%20layout%20and%20thumb-E.jpg)
 
 Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen QWERTZ Tastatur, die teilweise voneinander unabhängig sind, aber hier alle zu einem einheitlichen Ganzen gemacht wurden:
 
@@ -64,7 +71,6 @@ Das gemütliche Layout enthält mehrere Verbesserungen gegenüber der deutschen 
   + unter der linken Grundreihe bringt AltGr Navigationstasten hervor: Pfeile, Anfang/Ende, Bild auf/ab. Gerade bei Laptops ist das sehr nützlich, weil diese Tasten je nach Modell anders liegen und oft schwer erreichbar sind! (Besonders leicht zu merken ist AltGr+A für Anfang, auch weil Strg+A bei vielen Unix-Programmen schon seit Jahrzehnten dasselbe macht. ;)
   + Auf der rechten Seite sind alle Klammern erreichbar, was sowohl bei normalen Texten hilft, da () auf der Grundreihe liegen, als auch Programmierer immens unterstützt, da alle Klammer-Paare mit denselben beiden Fingern auf unterschiedlichen Reihen bedient werden. [] liegt dabei auf der Standard-Position, die sich aber dank dem linken AltGr viel leichter tippen lässt. () wie gesagt auf der Grundreihe, {} zwischen beiden und <> darunter.
  
-TODO: Außerdem wäre Shift+Backspace eine tolle Variante für Entf, da leicht zu merken und genau wie beim Mac. (Sicherheitshalber auch AltGr+Backspace, falls es manche Programme überschreiben.) Allerdings bin ich nicht sicher, dass sich so eine Umbelegung nur über die Layout-Konfiguration machen lässt.
 
 ### Bequemere Sonderzeichen – nicht nur für Programmierer
 
